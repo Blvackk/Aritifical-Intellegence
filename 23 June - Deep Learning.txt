@@ -1,0 +1,38 @@
+(23-06-26)
+
+DEEP LEARNING  --> Collection of Neural Network
+ANN
+CNN
+RNN
+
+When ML fails then AI , When AI then Gen AI
+
+
+key learning --->
+1. Neuron or Node
+2. Signal or synapse
+3. Input Layer
+4. Hidden Layer
+5. Output Layer
+6. Single Layer Neural Network ( 1input - 1hidden - 1output )
+7. Multi Layer Neural Network ( 1 input - more hidden -1 output )
+8. Neuron will activate then only signal ( Activation Function)
+9. Forward Propagation (weights will assign)
+10. Backward Propagate (weights are adjusted)
+11. fp + bp == Complete itertion (complete cycle = EPOC)
+12. During multiple EPOC accuracy will increase 
+13. New Weight , old weight ( during backpropagation ) weight will adjusted and forward accuracy about neural network archiitecture
+14. Activation function always apply hidden layer & outer layer only
+15. What is actvation Function
+
+   Sigmoid Activation Function
+   tanh Activation Function
+   relu Activation Function
+   leeky relu Activation Function
+   Softmax Activation Function
+
+
+logistic --> When the data has outlier -- prob function adjust the outlier (sigmoid function) =1/1 + e-y
+Sigmoid Curve == 0-1
+   Sigmoid curve adjust outlier
+   Sigmoid activation function always implementation output layer only
