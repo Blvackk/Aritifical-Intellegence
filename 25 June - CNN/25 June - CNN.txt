@@ -1,0 +1,72 @@
+(25-06-26)
+
+CNN --> CONVOLUTION NEURAL NETWORK
+
+
+CNN Architecture ==>
+Before Understanding the CNN, lets understand first about these two core subject
+
+IMAGE PROCESSING => is a method to perform some operations on an image , in order to get an enhances image or to extract some useful information from it. input is image & output is image or characteristics / feature associated with that image.
+
+
+COMPUTER VISION ==> is  a field of computer science that works on enabling computers to see, identify & process images in the same way that human vision and the provide appropriate output.
+
+
+
+given image is breakdown into pixel , every pixel has a range to 0-255
+2D represents BLACK & WHITE  image
+3D represents BGR (Blue , Green & Red)                                                                                                             
+
+
+CNN has 4 Layers -->
+1. Convolution layer
+2. Max Pooling
+3. Flatten
+4. Fully Connected
+
+
+
+ANN -- input layer  || CNN -- input matrix
+ANN -- Hidden layer || CNN -- filter (feature detector)
+ANN -- Output Layer || CNN -- output matrix (feature map)
+
+
+1. CONVOLUTION LAYER ==>
+
+It is a mathematical operation that allows the merging of two sets of information.
+In CNN , convolution is applied to the input data to filter the information and produce a feature map.
+This filter is also called a KERNEL , or feature detector
+It merges two sets of information & in CNN , the convolution is performed on the input data with the use of a filter or  kernel to then produce a feature map.
+
+
+STRIDING :-
+[ n-f+1 ] =>  the output will be the dimensions of output matrix
+
+n = no of matrix
+f=filter
+
+Stride denotes how many steps we are moving in each steps in convolution & by default it is one.
+
+
+PADDING :-
+We can observe that the size of output is smaller that input. To maintain the dimension of output as in input , we use padding . Padding is a process of adding zeros to the input matrix symmetrically.
+
+
+
+2. MAX POOLING ==>
+It works by selecting the maximum value from every pool.
+Max Pooling retains the most  prominent feature of the feature map, and the returned image is sharpener than the original image.
+Max Pooling is a pooling operation that calculates the maximum value for patches of a feature map, and uses it to create a down sampled feature map.
+It is usually used after a CONVOLUTION layer.
+
+
+3. Flattening Layer ==>
+Flattening is used to convert all the resultant 2 - Dimensional Arrays from pooled feature maps into a single long continuous linear vector.
+The flattened matrix is fed as input to the fully connected layer to classify the image.
+Flatten layer is used to make the multidimensional input 1D , commonly used in the transition from the convolution layer to the full connected image.
+
+
+4. Fully  Connected Layer ==>
+A Fully connected layer refers to a neural network in which each neuron applies a linear transformation to the input layer through a weights matrix , as a result , all possible connection layer - to layer are present, meaning every input vector influences every output of the output vector.
+
+This layer connects the information extracted from the previous steps to the output layer & eventually classifies the input into the desired label.
