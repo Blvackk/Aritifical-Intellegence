@@ -1,0 +1,141 @@
+(13-07-26)
+
+===========
+TIME SERIES
+===========
+
+regression model has 2 variable i.e dependent & independent
+Whereas , in time series we has only one variable i.e TIME SERIES 
+
+
+Time series data --- data which collects on time
+ monthly salary
+ income returns
+ taxes
+ GDP
+
+
+Cross sectional-data --- data which doesn't collects on time 
+ business working  income
+
+
+Pooled data -- time series+ cross sectional 
+ Job & Business
+ Salary on time(time series)
+
+
+Patterns -- hourly , yearly , weekly , daily , monthly
+
+
+Components of Time Series --
+ Trend
+ Season
+ Cyclical
+ Random
+
+
+Time Series Model--
+AR (Auto regressive )
+MA (Moving Average)
+ARMA (AR+MA)
+ARIMA ( ARMA + Integration)
+SARIMA( Sessional + ARIMA)
+ARIMAX ( ARIMA + Xtrogeneous Factor)
+SARIMAX ( Seasonal + ARIMA + Xtrogeneous Factor)
+
+
+
+AR Model :
+--------
+ Predicts future based on past time ( t= t-1,t-2,...)
+ yt = b0+b1yt-1 +b2yt-2 + ......
+
+It has 2 component : ACF & PACF
+  ACF --> (Auto Corelation Function)
+  PACF --> (Partial Auto Corelation Function)
+
+
+
+
+In, Regression we have 2 variable -- X&Y (exp --salary)
+time series we have 1 variable time , 
+  Relative between Current time with prevous time is called "LAGS"
+
+
+
+CORELATIO V/S LAGS
+corelation works with 2 variable x&y ; whereas LAGS works with  1 variable i.e previous time 
+
+
+ACF ---> Direct & indirect effect of values in previous time lags with the current time period.
+PACF ---> Only direct effect of values in previous time lags.
+
+
+
+
+
+MA Model :
+----------
+
+Predict the future time based on past error 
+ AR Model -- past time (t= t-1, t-2,t-3)
+ MA Model -- past error ( e = E-1 , E-2, E-3)
+
+
+
+ARMA Model :  (AR + MA)
+------------
+ it IS THE COMBINATON OF AR & MA Model
+
+
+
+ARIMA Model :  (AR & MA + Integration)
+-----------
+
+Stationary :- Constant Mean & Constant Variance
+ if any dataset has constant mean & constant variance , then only apply "TIME SERIES MODEL"
+
+NON STATIONARY :- 
+ what if data is non stationary on that case what you (no constant mean , no constant variance)
+then apply this FORMULA :- Y(t)-Y(t-1)  to make it Stationary.
+
+How to check the graph is Stationary or not =>
+ 1. Visualization or Visual Inspection
+ 2. Global check v/s Local check
+
+ARIMA (ARMA + Stationary) Constant Mean & Constant Variance
+
+
+
+SARIMA Model : (Seasonal + ARIMA)
+--------------
+
+
+
+ARIMAX Model : (ARIMA + Xtrogeneous Variable)
+-------------
+If , there is any change in data Model , due to any external variable then it is called ARIMAX model.
+eg - Change of Flight prices due to ( Thunder storm, heavy rain) then we use ARIMAX Model
+
+
+
+SARIMAX Model : (SARIMA + Xtrogeneous Variable) Seasonal
+----------------
+If , there is any change in data Model i.e the data model will be of "Seasonal", due to any external variable then it is called SARIMAX model.
+
+
+Powerful Algo  == ARIMA
+
+
+
+===
+RNN (Recrant Neural Network)
+===
+
+ Data input Models :
+  ANN - Number | input layer , hidden layer , output layer
+  CNN - Image  | input matrix - filter , output matrix- maxpool -flatten -fully connect
+  RNN - Text   | input state - hidden state , output state
+
+
+RNN model is SEQ2SEQ Model
